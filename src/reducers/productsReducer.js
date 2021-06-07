@@ -1,4 +1,3 @@
-import { GET_PRODUCTS } from "../action-types/product-types";
 import Data from "../data/data";
 
 const initialState = Data;
