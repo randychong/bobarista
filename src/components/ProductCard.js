@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { Button, ProductImage } from "../styled-components/styled-components";
+import { addToCart } from "../actions/cart-actions";
 
 export default function ProductCard(props) {
+  const dispatch = useDispatch();
   return (
     <div>
       <ProductImage
@@ -10,7 +13,9 @@ export default function ProductCard(props) {
       ></ProductImage>
       <p>{props.product.name}</p>
       <p>${props.product.price}</p>
-      <Button onClick={() => console.log("hello")}>Add to Cart</Button>
+      <Button onClick={() => addToCart(dispatch, props.product)}>
+        Add to Cart
+      </Button>
     </div>
   );
 }
