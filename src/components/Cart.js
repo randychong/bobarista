@@ -7,7 +7,8 @@ export default function Cart() {
   return (
     <div>
       <h1>Your Cart</h1>
-      <p>Total Items: {cartItems.products.length}</p>
+      <p>Number of Items: {cartItems.products.length}</p>
+      <p>Total: ${cartItems.total}</p>
       {cartItems.products.map((item) => (
         <CartItem item={item} key={item.id} />
       ))}

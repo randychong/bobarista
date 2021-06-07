@@ -11,7 +11,7 @@ const Cart = (state = initialState, action) => {
         ...state,
         products: [...state.products, action.payload],
       };
-      return newState;
+      break;
     case REMOVE_FROM_CART:
       newState = {
         ...state,
@@ -19,10 +19,16 @@ const Cart = (state = initialState, action) => {
           (product) => product.id !== action.payload
         ),
       };
-      return newState;
+      break;
     default:
-      return state;
+      break;
   }
+
+  newState.total = newState.products.reduce(
+    (sum, product) => sum + product.price,
+    0
+  );
+  return newState;
 };
 
 export default Cart;

@@ -9,6 +9,7 @@ export default function CartItem(props) {
     <div>
       <ProductImage src={props.item.img}></ProductImage>
       <p>{props.item.name}</p>
+      <p>${props.item.price}</p>
       <Button onClick={() => removeFromCart(dispatch, props.item.id)}>
         Remove from Cart
       </Button>
