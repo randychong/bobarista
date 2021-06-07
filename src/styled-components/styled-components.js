@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
-const Button = styled.button``;
+export const Button = styled.button`
+  height: 2rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+`;
 
-export default Button;
+export const ProductImage = styled.img`
+  height: 200px;
+  width: 200px;
+`;
+
+export const AppHeader = styled.h1`
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+`;

@@ -1,8 +1,8 @@
 import React from "react";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "./ProductCard";
 import { useSelector } from "react-redux";
 
-export default function ProductContainer() {
+export default function ProductPage() {
   const products = useSelector((state) => state.Products);
 
   return (
