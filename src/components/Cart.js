@@ -3,11 +3,12 @@ import { useSelector } from "react-redux";
 import CartItem from "../components/CartItem";
 
 export default function Cart() {
-  const cartItem = useSelector((state) => state.Cart);
+  const cartItems = useSelector((state) => state.Cart);
   return (
     <div>
-      <h1>Cart</h1>
-      {cartItem.products.map((item) => (
+      <h1>Your Cart</h1>
+      <p>Total Items: {cartItems.products.length}</p>
+      {cartItems.products.map((item) => (
         <CartItem item={item} key={item.id} />
       ))}
     </div>
