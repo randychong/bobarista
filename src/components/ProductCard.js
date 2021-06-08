@@ -6,7 +6,7 @@ import {
   MenuCard,
   MenuInfo,
   ProductName,
-  ProductPrice,
+  ProductInfo,
 } from "../styled-components/styled-components";
 
 export default function ProductCard(props) {
@@ -16,13 +16,13 @@ export default function ProductCard(props) {
       <MenuCard>
         <MenuInfo>
           <ProductImage
-            src={props.product.img}
+            src={props.product.image}
             alt={props.product.name}
           ></ProductImage>
         </MenuInfo>
         <MenuInfo>
           <ProductName>{props.product.name}</ProductName>
-          <ProductPrice>${props.product.price}</ProductPrice>
+          <ProductInfo>${props.product.price}</ProductInfo>
           <Button add onClick={() => addToCart(dispatch, props.product)}>
             Add to Cart
           </Button>

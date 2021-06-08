@@ -40,7 +40,7 @@ export const ProductName = styled.h3`
   font-size: 20px;
 `;
 
-export const ProductPrice = styled.p``;
+export const ProductInfo = styled.p``;
 
 export const HomeBanner = styled.img`
   width: 100vw;

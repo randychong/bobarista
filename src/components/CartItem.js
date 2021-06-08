@@ -6,7 +6,7 @@ import {
   MenuCard,
   MenuInfo,
   ProductName,
-  ProductPrice,
+  ProductInfo,
 } from "../styled-components/styled-components";
 
 export default function CartItem(props) {
@@ -15,11 +15,12 @@ export default function CartItem(props) {
     <div>
       <MenuCard>
         <MenuInfo>
-          <ProductImage src={props.item.img}></ProductImage>
+          <ProductImage src={props.item.image}></ProductImage>
         </MenuInfo>
         <MenuInfo>
           <ProductName>{props.item.name}</ProductName>
-          <ProductPrice>${props.item.price}</ProductPrice>
+          <ProductInfo>${props.item.price}</ProductInfo>
+          <ProductInfo>Quantity: {props.item.quantity}</ProductInfo>
           <Button onClick={() => removeFromCart(dispatch, props.item.id)}>
             Remove from Cart
           </Button>

@@ -11,6 +11,7 @@ import {
 import HomeIcon from "../images/home.png";
 import CoffeeIcon from "../images/coffee-cup.png";
 import CartIcon from "../images/shopping-cart.png";
+import Page404 from "../components/Page404";
 
 export default function Navbar() {
   return (
@@ -39,6 +40,7 @@ export default function Navbar() {
           <Route exact path="/" component={Home} />
           <Route exact path="/menu" component={ProductPage} />
           <Route exact path="/cart" component={Cart} />
+          <Route component={Page404} />
         </Switch>
       </Router>
     </div>
