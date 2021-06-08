@@ -22,6 +22,24 @@ export const AppHeader = styled.h1`
   font-family: "Dancing Script", cursive;
   font-size: 40px;
   margin-bottom: 1rem;
+
+  @media (min-width: 992px) {
+    font-size: 50px;
+  }
+`;
+
+export const MenuContainer = styled.div`
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 1400px) {
+    width: 65vw;
+  }
 `;
 
 export const MenuCard = styled.div`
@@ -30,6 +48,12 @@ export const MenuCard = styled.div`
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px lightgray solid;
+
+  @media (min-width: 600px) {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const MenuInfo = styled.div`
@@ -45,6 +69,14 @@ export const ProductInfo = styled.p``;
 export const HomeBanner = styled.img`
   width: 100vw;
   margin-bottom: 1rem;
+
+  @media (min-width: 992px) {
+    width: 80vw;
+  }
+
+  @media (min-width: 1200px) {
+    width: 60vw;
+  }
 `;
 
 export const NavIcon = styled.img`
@@ -54,10 +86,14 @@ export const NavIcon = styled.img`
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 10rem;
   margin-left: auto;
   margin-right: auto;
   border-bottom: ${(props) => (props.primary ? "1px lightgray solid" : "none")};
+
+  @media (min-width: 992px) {
+    width: 15rem;
+  }
 `;
 
 export const FooterIcon = styled.img`

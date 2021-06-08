@@ -1,7 +1,7 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Button, ProductImage } from "../styled-components/styled-components";
-import { addToCart } from "../actions/cart-actions";
+import { addToCart, removeFromCart } from "../actions/cart-actions";
 import {
   MenuCard,
   MenuInfo,
@@ -11,6 +11,14 @@ import {
 
 export default function ProductCard(props) {
   const dispatch = useDispatch();
+  const addedToCartList = useSelector((state) => {
+    return state.Products.products.find(
+      (product) => product.id === props.product.id
+    );
+  });
+  const test = useSelector((state) => state.Products.products[0].id);
+  console.log(test);
+
   return (
     <div>
       <MenuCard>
@@ -23,9 +31,15 @@ export default function ProductCard(props) {
         <MenuInfo>
           <ProductName>{props.product.name}</ProductName>
           <ProductInfo>${props.product.price}</ProductInfo>
-          <Button add onClick={() => addToCart(dispatch, props.product)}>
-            Add to Cart
-          </Button>
+          {!addedToCartList ? (
+            <Button onClick={() => removeFromCart(dispatch, props.product.id)}>
+              Remove from Cart
+            </Button>
+          ) : (
+            <Button add onClick={() => addToCart(dispatch, props.product)}>
+              Add to Cart
+            </Button>
+          )}
         </MenuInfo>
       </MenuCard>
     </div>

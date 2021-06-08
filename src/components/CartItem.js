@@ -20,7 +20,6 @@ export default function CartItem(props) {
         <MenuInfo>
           <ProductName>{props.item.name}</ProductName>
           <ProductInfo>${props.item.price}</ProductInfo>
-          <ProductInfo>Quantity: {props.item.quantity}</ProductInfo>
           <Button onClick={() => removeFromCart(dispatch, props.item.id)}>
             Remove from Cart
           </Button>
