@@ -3,26 +3,38 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from "../components/Home";
 import ProductPage from "../components/ProductPage";
 import Cart from "../components/Cart";
-import { AppHeader } from "../styled-components/styled-components";
-import { useSelector } from "react-redux";
+import {
+  AppHeader,
+  NavIcon,
+  Nav,
+} from "../styled-components/styled-components";
+import HomeIcon from "../images/home.png";
+import CoffeeIcon from "../images/coffee-cup.png";
+import CartIcon from "../images/shopping-cart.png";
 
 export default function Navbar() {
-  const cartItems = useSelector((state) => state.Cart);
   return (
     <div>
       <AppHeader>The Bobarista</AppHeader>
       <Router>
-        <nav>
+        <Nav primary>
           <p>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <NavIcon src={HomeIcon}></NavIcon>
+            </Link>
           </p>
           <p>
-            <Link to="/menu">Menu</Link>
+            <Link to="/menu">
+              <NavIcon src={CoffeeIcon}></NavIcon>
+            </Link>
           </p>
           <p>
-            <Link to="/cart">Cart - {cartItems.products.length}</Link>
+            <Link to="/cart">
+              <NavIcon src={CartIcon}></NavIcon>
+            </Link>
           </p>
-        </nav>
+        </Nav>
+
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/menu" component={ProductPage} />

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Button = styled.button`
   height: 2rem;
   width: 10rem;
-  margin-top: 1.8rem;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   border-radius: 3px;
@@ -22,6 +21,7 @@ export const ProductImage = styled.img`
 export const AppHeader = styled.h1`
   font-family: "Dancing Script", cursive;
   font-size: 40px;
+  margin-bottom: 1rem;
 `;
 
 export const MenuCard = styled.div`
@@ -41,3 +41,25 @@ export const ProductName = styled.h3`
 `;
 
 export const ProductPrice = styled.p``;
+
+export const HomeBanner = styled.img`
+  width: 100vw;
+  margin-bottom: 1rem;
+`;
+
+export const NavIcon = styled.img`
+  height: 2rem;
+`;
+
+export const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: ${(props) => (props.primary ? "1px lightgray solid" : "none")};
+`;
+
+export const FooterIcon = styled.img`
+  height: 2rem;
+`;
