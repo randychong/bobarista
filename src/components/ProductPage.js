@@ -7,7 +7,7 @@ export default function ProductPage() {
 
   return (
     <div>
-      <h1>Products</h1>
+      <h1>Menu</h1>
       {products.products.map((product) => (
         <ProductCard product={product} key={product.id} />
       ))}
