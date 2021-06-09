@@ -1,4 +1,8 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from "../action-types/cart-types";
+import {
+  ADD_TO_CART,
+  REMOVE_FROM_CART,
+  ADD_QUANTITY,
+} from "../action-types/cart-types";
 
 export const addToCart = (dispatch, product, cart) => {
   // accept 3 arguemnts, dispatch, product {}, cart [{}]
@@ -16,6 +20,13 @@ export const addToCart = (dispatch, product, cart) => {
 export const removeFromCart = (dispatch, product) => {
   dispatch({
     type: REMOVE_FROM_CART,
+    payload: product,
+  });
+};
+
+export const addQuantity = (dispatch, product) => {
+  dispatch({
+    type: ADD_QUANTITY,
     payload: product,
   });
 };

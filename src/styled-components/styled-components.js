@@ -7,9 +7,16 @@ export const Button = styled.button`
   font-size: 16px;
   border-radius: 3px;
   border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
 
   background: ${(props) => (props.add ? "#00B6BC" : "#71D5E4")};
   color: ${(props) => (props.add ? "white" : "black")};
+
+  &:hover {
+    background: ${(props) => (props.add ? "#71D5E4" : "#00B6BC")};
+    color: ${(props) => (props.add ? "black" : "white")};
+  }
 `;
 
 export const ProductImage = styled.img`
@@ -66,8 +73,12 @@ export const ProductName = styled.h3`
 
 export const ProductInfo = styled.p``;
 
+export const HomeInfo = styled.p`
+  font-style: italic;
+`;
+
 export const HomeBanner = styled.img`
-  width: 100vw;
+  width: 90vw;
   margin-bottom: 1rem;
 
   @media (min-width: 992px) {
@@ -80,13 +91,13 @@ export const HomeBanner = styled.img`
 `;
 
 export const NavIcon = styled.img`
-  height: 2rem;
+  height: ${(props) => (props.primary ? "2rem" : "1.5rem")};
 `;
 
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-  width: 10rem;
+  width: ${(props) => (props.primary ? "10rem" : "8rem")};
   margin-left: auto;
   margin-right: auto;
   border-bottom: ${(props) => (props.primary ? "1px lightgray solid" : "none")};
@@ -94,8 +105,4 @@ export const Nav = styled.nav`
   @media (min-width: 992px) {
     width: 15rem;
   }
-`;
-
-export const FooterIcon = styled.img`
-  height: 2rem;
 `;

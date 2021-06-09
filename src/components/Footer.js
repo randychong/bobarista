@@ -2,23 +2,23 @@ import React from "react";
 import Instagram from "../images/instagram.png";
 import Facebook from "../images/facebook.png";
 import Twitter from "../images/twitter.png";
-import { Nav, FooterIcon } from "../styled-components/styled-components";
+import { Nav, NavIcon } from "../styled-components/styled-components";
 
 export default function Footer() {
   return (
     <div>
       <Nav>
         <a href="https://www.instagram.com/">
-          <FooterIcon src={Instagram}></FooterIcon>
+          <NavIcon src={Instagram}></NavIcon>
         </a>
         <a href="https://twitter.com/">
-          <FooterIcon src={Twitter}></FooterIcon>
+          <NavIcon src={Twitter}></NavIcon>
         </a>
         <a href="https://www.facebook.com/">
-          <FooterIcon src={Facebook}></FooterIcon>
+          <NavIcon src={Facebook}></NavIcon>
         </a>
       </Nav>
-      <p>©Copyright 2021</p>
+      <p>©2021 The Bobarista</p>
     </div>
   );
 }

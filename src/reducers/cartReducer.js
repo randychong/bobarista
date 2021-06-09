@@ -1,6 +1,6 @@
 import { ADD_TO_CART, REMOVE_FROM_CART } from "../action-types/cart-types";
 
-const initialState = { products: [], total: 0 };
+const initialState = { products: [], total: 0, quantity: 0 };
 
 const Cart = (state = initialState, action) => {
   let newState = state;

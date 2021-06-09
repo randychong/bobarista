@@ -21,17 +21,17 @@ export default function Navbar() {
         <Nav primary>
           <p>
             <Link to="/">
-              <NavIcon src={HomeIcon}></NavIcon>
+              <NavIcon primary src={HomeIcon}></NavIcon>
             </Link>
           </p>
           <p>
             <Link to="/menu">
-              <NavIcon src={CoffeeIcon}></NavIcon>
+              <NavIcon primary src={CoffeeIcon}></NavIcon>
             </Link>
           </p>
           <p>
             <Link to="/cart">
-              <NavIcon src={CartIcon}></NavIcon>
+              <NavIcon primary src={CartIcon}></NavIcon>
             </Link>
           </p>
         </Nav>
