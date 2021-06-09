@@ -6,7 +6,7 @@ import {
   MenuCard,
   MenuInfo,
   ProductName,
-  ProductInfo,
+  Info,
 } from "../styled-components/styled-components";
 
 export default function CartItem(props) {
@@ -19,7 +19,8 @@ export default function CartItem(props) {
         </MenuInfo>
         <MenuInfo>
           <ProductName>{props.item.name}</ProductName>
-          <ProductInfo>${props.item.price}</ProductInfo>
+          <Info>Quantity: {props.item.quantity}</Info>
+          <Info>${props.item.price}</Info>
           <Button onClick={() => removeFromCart(dispatch, props.item.id)}>
             Remove from Cart
           </Button>

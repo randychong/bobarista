@@ -8,7 +8,7 @@ export default function Cart() {
   return (
     <div>
       <h1>Your Cart</h1>
-      <p>Number of Items: {cartItems.products.length}</p>
+      <p>Number of Items: {cartItems.quantity}</p>
       <p>Total: ${cartItems.total}</p>
       <MenuContainer>
         {cartItems.products.map((item) => (

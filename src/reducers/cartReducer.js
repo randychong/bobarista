@@ -1,4 +1,8 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from "../action-types/cart-types";
+import {
+  ADD_TO_CART,
+  REMOVE_FROM_CART,
+  ADD_QUANTITY,
+} from "../action-types/cart-types";
 
 const initialState = { products: [], total: 0, quantity: 0 };
 
@@ -20,14 +24,28 @@ const Cart = (state = initialState, action) => {
         ),
       };
       break;
+    case ADD_QUANTITY:
+      break;
     default:
       break;
   }
 
-  newState.total = newState.products.reduce(
-    (sum, product) => sum + product.price,
+  const singleProductTotal = newState.products.map(
+    (product) => product.quantity * product.price
+  );
+  const updatedTotal = singleProductTotal.reduce(
+    (sum, product) => sum + product,
     0
   );
+  newState.total = updatedTotal;
+
+  const cartQuantity = newState.products.map((product) => product.quantity);
+  const updatedCartQuantity = cartQuantity.reduce(
+    (sum, product) => sum + product,
+    0
+  );
+  newState.quantity = updatedCartQuantity;
+
   return newState;
 };
 

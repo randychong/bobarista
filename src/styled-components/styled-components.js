@@ -20,8 +20,8 @@ export const Button = styled.button`
 `;
 
 export const ProductImage = styled.img`
-  height: 10rem;
-  width: 10rem;
+  height: 11rem;
+  width: 11rem;
   border-radius: 3px;
 `;
 
@@ -39,13 +39,9 @@ export const MenuContainer = styled.div`
   @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 85vw;
+    width: 70rem;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  @media (min-width: 1400px) {
-    width: 65vw;
   }
 `;
 
@@ -56,7 +52,19 @@ export const MenuCard = styled.div`
   padding-bottom: 1rem;
   border-bottom: 1px lightgray solid;
 
+  @media (max-width: 599px) {
+    width: 24rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (min-width: 600px) {
+    width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 1200px) {
     width: 30rem;
     margin-left: auto;
     margin-right: auto;
@@ -64,14 +72,27 @@ export const MenuCard = styled.div`
 `;
 
 export const MenuInfo = styled.div`
-  height: 10rem;
+  height: 11rem;
 `;
 
 export const ProductName = styled.h3`
   font-size: 20px;
 `;
 
-export const ProductInfo = styled.p``;
+export const Info = styled.p`
+  display: ${(props) => (props.link ? "none" : "")};
+  color: ${(props) => (props.link ? "black" : "")};
+  transition: ${(props) => (props.link ? "0.3s ease" : "")};
+
+  @media (min-width: 992px) {
+    display: ${(props) => (props.link ? "block" : "")};
+    text-decoration: ${(props) => (props.link ? "none" : "")};
+  }
+
+  &:hover {
+    color: ${(props) => (props.link ? "#A1DBF1" : "")};
+  }
+`;
 
 export const HomeInfo = styled.p`
   font-style: italic;
@@ -80,6 +101,7 @@ export const HomeInfo = styled.p`
 export const HomeBanner = styled.img`
   width: 90vw;
   margin-bottom: 1rem;
+  border-radius: 3px;
 
   @media (min-width: 992px) {
     width: 80vw;
@@ -100,9 +122,10 @@ export const Nav = styled.nav`
   width: ${(props) => (props.primary ? "10rem" : "8rem")};
   margin-left: auto;
   margin-right: auto;
+  padding: 1rem;
   border-bottom: ${(props) => (props.primary ? "1px lightgray solid" : "none")};
 
   @media (min-width: 992px) {
-    width: 15rem;
+    width: ${(props) => (props.primary ? "15rem" : "12rem")};
   }
 `;
