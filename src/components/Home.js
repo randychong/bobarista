@@ -16,8 +16,8 @@ export default function Home() {
       </Info>
 
       <Info home>
-        A place where you can relax with no worries, all while enjoying a cup
-        from the Bobarista.
+        A place where you can relax and dream, all while enjoying a cup from the
+        Bobarista.
       </Info>
 
       <Footer></Footer>
