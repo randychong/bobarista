@@ -15,7 +15,7 @@ export const addToCart = (dispatch, product, cart) => {
   }
 };
 
-export const removeFromCart = (dispatch, product) => {
+export const removeFromCart = (dispatch, product, cart) => {
   dispatch({
     type: REMOVE_FROM_CART,
     payload: product,

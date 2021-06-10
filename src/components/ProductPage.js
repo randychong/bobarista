@@ -2,6 +2,7 @@ import React from "react";
 import ProductCard from "./ProductCard";
 import { useSelector } from "react-redux";
 import { MenuContainer } from "../styled-components/styled-components";
+import Footer from "../components/Footer";
 
 export default function ProductPage() {
   const products = useSelector((state) => state.Products);
@@ -14,6 +15,7 @@ export default function ProductPage() {
           <ProductCard product={product} key={product.id} />
         ))}
       </MenuContainer>
+      <Footer></Footer>
     </div>
   );
 }

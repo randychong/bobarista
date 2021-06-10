@@ -8,6 +8,7 @@ import {
   NavIcon,
   Nav,
   Info,
+  InfoContainer,
 } from "../styled-components/styled-components";
 import HomeIcon from "../images/home.png";
 import CoffeeIcon from "../images/coffee-cup.png";
@@ -20,24 +21,24 @@ export default function Navbar() {
       <AppHeader>The Bobarista</AppHeader>
       <Router>
         <Nav primary>
-          <div>
+          <InfoContainer nav>
             <Link to="/" className="nav-link">
               <NavIcon primary src={HomeIcon}></NavIcon>
               <Info link>Home</Info>
             </Link>
-          </div>
-          <div>
+          </InfoContainer>
+          <InfoContainer nav>
             <Link to="/menu" className="nav-link">
               <NavIcon primary src={CoffeeIcon}></NavIcon>
               <Info link>Menu</Info>
             </Link>
-          </div>
-          <div>
+          </InfoContainer>
+          <InfoContainer nav>
             <Link to="/cart" className="nav-link">
               <NavIcon primary src={CartIcon}></NavIcon>
               <Info link>Cart</Info>
             </Link>
-          </div>
+          </InfoContainer>
         </Nav>
 
         <Switch>

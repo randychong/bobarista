@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import CartItem from "../components/CartItem";
 import { MenuContainer } from "../styled-components/styled-components";
+import Footer from "../components/Footer";
 
 export default function Cart() {
   const cartItems = useSelector((state) => state.Cart);
@@ -15,6 +16,7 @@ export default function Cart() {
           <CartItem item={item} key={item.id} />
         ))}
       </MenuContainer>
+      <Footer></Footer>
     </div>
   );
 }

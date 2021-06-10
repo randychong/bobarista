@@ -5,7 +5,7 @@ import espresso from "../images/espresso.png";
 import honey from "../images/honey-green-tea.png";
 import lemon from "../images/lemon-wintermelon-tea.png";
 import matcha from "../images/matcha-green-tea.png";
-import lychee from "../images/lychee-oolong.png";
+import lychee from "../images/lychee-oolong-tea.png";
 import thai from "../images/thai-tea.png";
 import viet from "../images/viet-coffee.png";
 

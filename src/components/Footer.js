@@ -7,7 +7,7 @@ import { Nav, NavIcon } from "../styled-components/styled-components";
 export default function Footer() {
   return (
     <div>
-      <Nav>
+      <Nav footer>
         <a href="https://www.instagram.com/">
           <NavIcon src={Instagram}></NavIcon>
         </a>
