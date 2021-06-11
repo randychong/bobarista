@@ -3,6 +3,8 @@ I have a dream to one day open up my own cafe one day, and that dream inspired m
 The main technologies used in this projected were React, Redux, and styled components. I gained a better understanding of how components worked and how props are passed, and it definitely gave me a better appreciation of these technologies.
 
 Website link: https://randychong.github.io/bobarista
+Medium Article: https://randychong27.medium.com/crafting-the-bobarista-b12e04b5f153
+
 
 ![cafe-app-home-2](https://user-images.githubusercontent.com/80119466/121717743-268c2500-caa7-11eb-89d8-1972d827bf9d.png)
 
