@@ -22,7 +22,7 @@ export default function Navbar() {
       <Router>
         <Nav primary>
           <InfoContainer nav>
-            <Link to="/" className="nav-link">
+            <Link to="/bobarista" className="nav-link">
               <NavIcon primary src={HomeIcon}></NavIcon>
               <Info link>Home</Info>
             </Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
         </Nav>
 
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/bobarista" component={Home} />
           <Route exact path="/menu" component={ProductPage} />
           <Route exact path="/cart" component={Cart} />
           <Route component={Page404} />
