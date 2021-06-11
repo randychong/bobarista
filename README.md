@@ -11,6 +11,9 @@ Medium Article: https://randychong27.medium.com/crafting-the-bobarista-b12e04b5f
 ![cafe-app-home-2](https://user-images.githubusercontent.com/80119466/121717743-268c2500-caa7-11eb-89d8-1972d827bf9d.png)
 
 -Home Page-
+. . .
+
+The navbar was made using React Router and when the app hits desktop resolution, the navbar icons receive text
 
  . . .
 
