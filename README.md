@@ -3,8 +3,8 @@ Website link: https://randychong.github.io/bobarista
 ![cafe-app-home-2](https://user-images.githubusercontent.com/80119466/121717743-268c2500-caa7-11eb-89d8-1972d827bf9d.png)
 -Home Page-
 
-![cafe-app-menu-2](https://user-images.githubusercontent.com/80119466/121717792-33a91400-caa7-11eb-8b5b-9abb9c527fb7.png)
+![cafe-menu-double-column](https://user-images.githubusercontent.com/80119466/121717972-6521df80-caa7-11eb-862e-e45894fd420c.png)
 -Menu Page-
 
-![cafe-app-cart-2](https://user-images.githubusercontent.com/80119466/121717814-399ef500-caa7-11eb-810d-bf91618c9958.png)
+![cafe-cart-double-column](https://user-images.githubusercontent.com/80119466/121717996-6bb05700-caa7-11eb-8d3c-e16180c25889.png)
 -Cart Page-
