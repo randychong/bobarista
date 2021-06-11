@@ -28,24 +28,27 @@ export default function Navbar() {
             </Link>
           </InfoContainer>
           <InfoContainer nav>
-            <Link to="/menu" className="nav-link">
+            <Link to="/randychong.github.io/menu" className="nav-link">
               <NavIcon primary src={CoffeeIcon}></NavIcon>
               <Info link>Menu</Info>
             </Link>
           </InfoContainer>
           <InfoContainer nav>
-            <Link to="/cart" className="nav-link">
+            <Link to="/randychong.github.io/cart" className="nav-link">
               <NavIcon primary src={CartIcon}></NavIcon>
               <Info link>Cart</Info>
             </Link>
           </InfoContainer>
         </Nav>
-
         <Switch>
           <Route exact path="/bobarista" component={Home} />
-          <Route exact path="/menu" component={ProductPage} />
-          <Route exact path="/cart" component={Cart} />
-          <Route component={Page404} />
+          <Route
+            exact
+            path="/randychong.github.io/menu"
+            component={ProductPage}
+          />
+          <Route exact path="/randychong.github.io/cart" component={Cart} />
+          <Route path="/*" component={Page404} />
         </Switch>
       </Router>
     </div>

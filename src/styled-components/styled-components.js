@@ -9,7 +9,6 @@ export const Button = styled.button`
   border: none;
   cursor: pointer;
   transition: 200ms ease;
-
   background: ${(props) => (props.add ? "#00B6BC" : "#71D5E4")};
   color: ${(props) => (props.add ? "white" : "black")};
 
@@ -135,9 +134,9 @@ export const NavIcon = styled.img`
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-  width: ${(props) => (props.primary ? "10rem" : "8rem")};
   margin-left: auto;
   margin-right: auto;
+  width: ${(props) => (props.primary ? "10rem" : "8rem")};
   border-bottom: ${(props) => (props.primary ? "1px lightgray solid" : "none")};
   margin-bottom: ${(props) => (props.primary ? "2rem" : "none")};
   padding: ${(props) => (props.footer ? "1rem" : "none")};
