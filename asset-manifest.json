@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/bobarista/static/css/main.3d9edbf1.chunk.css",
+    "main.js": "/bobarista/static/js/main.687b6f78.chunk.js",
+    "main.js.map": "/bobarista/static/js/main.687b6f78.chunk.js.map",
+    "runtime-main.js": "/bobarista/static/js/runtime-main.d2ae4194.js",
+    "runtime-main.js.map": "/bobarista/static/js/runtime-main.d2ae4194.js.map",
+    "static/js/2.4d90f604.chunk.js": "/bobarista/static/js/2.4d90f604.chunk.js",
+    "static/js/2.4d90f604.chunk.js.map": "/bobarista/static/js/2.4d90f604.chunk.js.map",
+    "index.html": "/bobarista/index.html",
+    "static/css/main.3d9edbf1.chunk.css.map": "/bobarista/static/css/main.3d9edbf1.chunk.css.map",
+    "static/js/2.4d90f604.chunk.js.LICENSE.txt": "/bobarista/static/js/2.4d90f604.chunk.js.LICENSE.txt",
+    "static/media/affogato.a1da0962.png": "/bobarista/static/media/affogato.a1da0962.png",
+    "static/media/americano.1bd40203.png": "/bobarista/static/media/americano.1bd40203.png",
+    "static/media/cappucino.a06c62af.png": "/bobarista/static/media/cappucino.a06c62af.png",
+    "static/media/coffee-circle.d268def0.png": "/bobarista/static/media/coffee-circle.d268def0.png",
+    "static/media/coffee-cup.797ea14c.png": "/bobarista/static/media/coffee-cup.797ea14c.png",
+    "static/media/empty-cart.b3b1f35b.png": "/bobarista/static/media/empty-cart.b3b1f35b.png",
+    "static/media/espresso.0f810cc0.png": "/bobarista/static/media/espresso.0f810cc0.png",
+    "static/media/honey-green-tea.23d77ba4.png": "/bobarista/static/media/honey-green-tea.23d77ba4.png",
+    "static/media/instagram.776d16d0.png": "/bobarista/static/media/instagram.776d16d0.png",
+    "static/media/lemon-wintermelon-tea.6f6a4ec8.png": "/bobarista/static/media/lemon-wintermelon-tea.6f6a4ec8.png",
+    "static/media/lychee-oolong-tea.472c6dd6.png": "/bobarista/static/media/lychee-oolong-tea.472c6dd6.png",
+    "static/media/matcha-green-tea.796f32cd.png": "/bobarista/static/media/matcha-green-tea.796f32cd.png",
+    "static/media/shopping-cart.eca5ee08.png": "/bobarista/static/media/shopping-cart.eca5ee08.png",
+    "static/media/teapot.6e3c0650.png": "/bobarista/static/media/teapot.6e3c0650.png",
+    "static/media/thai-tea.887111c8.png": "/bobarista/static/media/thai-tea.887111c8.png",
+    "static/media/twitter.a4f70cc6.png": "/bobarista/static/media/twitter.a4f70cc6.png",
+    "static/media/viet-coffee.dea089d3.png": "/bobarista/static/media/viet-coffee.dea089d3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2ae4194.js",
+    "static/js/2.4d90f604.chunk.js",
+    "static/css/main.3d9edbf1.chunk.css",
+    "static/js/main.687b6f78.chunk.js"
+  ]
+}
