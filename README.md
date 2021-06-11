@@ -5,6 +5,7 @@ The main technologies used in this projected were React, Redux, and styled compo
 Website link: https://randychong.github.io/bobarista
 
 ![cafe-app-home-2](https://user-images.githubusercontent.com/80119466/121717743-268c2500-caa7-11eb-89d8-1972d827bf9d.png)
+
 -Home Page-
 
 ![cafe-menu-double-column](https://user-images.githubusercontent.com/80119466/121717972-6521df80-caa7-11eb-862e-e45894fd420c.png)
