@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bobarista/static/css/main.3d9edbf1.chunk.css",
-    "main.js": "/bobarista/static/js/main.9f1d361e.chunk.js",
-    "main.js.map": "/bobarista/static/js/main.9f1d361e.chunk.js.map",
+    "main.js": "/bobarista/static/js/main.df112998.chunk.js",
+    "main.js.map": "/bobarista/static/js/main.df112998.chunk.js.map",
     "runtime-main.js": "/bobarista/static/js/runtime-main.d2ae4194.js",
     "runtime-main.js.map": "/bobarista/static/js/runtime-main.d2ae4194.js.map",
     "static/js/2.4d90f604.chunk.js": "/bobarista/static/js/2.4d90f604.chunk.js",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.d2ae4194.js",
     "static/js/2.4d90f604.chunk.js",
     "static/css/main.3d9edbf1.chunk.css",
-    "static/js/main.9f1d361e.chunk.js"
+    "static/js/main.df112998.chunk.js"
   ]
 }
