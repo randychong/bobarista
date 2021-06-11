@@ -23,10 +23,11 @@ export const Button = styled.button`
   }
 `;
 
-export const ProductImage = styled.img`
-  height: 11rem;
-  width: 11rem;
-  border-radius: 3px;
+export const Image = styled.img`
+  height: ${(props) => (props.product ? "11rem" : "")};
+  width: ${(props) => (props.product ? "11rem" : "")};
+  border-radius: ${(props) => (props.product ? "3px" : "")};
+  grid-column: ${(props) => (props.cart ? "1/3" : "")};
 `;
 
 export const AppHeader = styled.h1`
@@ -42,6 +43,7 @@ export const AppHeader = styled.h1`
 export const MenuContainer = styled.div`
   @media (min-width: 1200px) {
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr 1fr;
     width: 70rem;
     margin-left: auto;

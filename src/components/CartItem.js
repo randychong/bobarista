@@ -1,13 +1,14 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { ProductImage, Button } from "../styled-components/styled-components";
-import { removeFromCart } from "../actions/cart-actions";
 import {
+  Image,
+  Button,
   MenuCard,
   InfoContainer,
   ProductName,
   Info,
 } from "../styled-components/styled-components";
+import { removeFromCart } from "../actions/cart-actions";
 
 export default function CartItem(props) {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ export default function CartItem(props) {
     <div>
       <MenuCard>
         <InfoContainer product>
-          <ProductImage src={props.item.image}></ProductImage>
+          <Image product src={props.item.image}></Image>
         </InfoContainer>
         <InfoContainer product>
           <ProductName>{props.item.name}</ProductName>

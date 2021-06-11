@@ -1,13 +1,14 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Button, ProductImage } from "../styled-components/styled-components";
-import { addToCart } from "../actions/cart-actions";
 import {
+  Button,
+  Image,
   MenuCard,
   InfoContainer,
   ProductName,
   Info,
 } from "../styled-components/styled-components";
+import { addToCart } from "../actions/cart-actions";
 
 export default function ProductCard(props) {
   const dispatch = useDispatch();
@@ -16,10 +17,11 @@ export default function ProductCard(props) {
     <div>
       <MenuCard>
         <InfoContainer product>
-          <ProductImage
+          <Image
+            product
             src={props.product.image}
             alt={props.product.name}
-          ></ProductImage>
+          ></Image>
         </InfoContainer>
         <InfoContainer product>
           <ProductName>{props.product.name}</ProductName>
