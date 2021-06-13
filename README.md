@@ -12,12 +12,20 @@ Medium Article: https://randychong27.medium.com/crafting-the-bobarista-b12e04b5f
 
 -Home Page-
 
+Making my applications mobile responsive was one of my main priorities since I understand a majority of users will be viewing my apps on their phones. Also, developing mobile first made media queries easier going from mobile to desktop.
+
+Adding icons for the navbar made the user's mobile experience more efficient, and I even added some button effects to give the app alittle life when they are clicked.
+
  . . .
 
 ![cafe-menu-double-column](https://user-images.githubusercontent.com/80119466/121717972-6521df80-caa7-11eb-862e-e45894fd420c.png)
 -Menu Page-
 
+The menu items were inspired from coffee shops that I've visited and from my experience as a 'bobarista'. It was crucial that I found high quality photos that did not have too much noise that would take away from the actual product itself. 
+
  . . .
 
 ![cafe-cart-double-column](https://user-images.githubusercontent.com/80119466/121717996-6bb05700-caa7-11eb-8d3c-e16180c25889.png)
 -Cart Page-
+
+For the cart, it was important that I displayed the total number of items in the cart along with the total value. Also, adding an image for when the cart is empty helped give it some life even when no products have been added yet.
