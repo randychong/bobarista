@@ -18,7 +18,8 @@ Adding icons for the navbar made the user's mobile experience more efficient, an
 
  . . .
 
-![cafe-menu-double-column](https://user-images.githubusercontent.com/80119466/121717972-6521df80-caa7-11eb-862e-e45894fd420c.png)
+![cafe-app-menu-3](https://user-images.githubusercontent.com/80119466/121796891-1d53a300-cbe2-11eb-8508-0f4c4211da90.png)
+
 -Menu Page-
 
 The menu items were inspired from coffee shops that I've visited and from my experience as a 'bobarista'. It was crucial that I found high quality photos that did not have too much noise that would take away from the actual product itself. 
@@ -26,6 +27,7 @@ The menu items were inspired from coffee shops that I've visited and from my exp
  . . .
 
 ![cafe-cart-double-column](https://user-images.githubusercontent.com/80119466/121717996-6bb05700-caa7-11eb-8d3c-e16180c25889.png)
+
 -Cart Page-
 
 For the cart, it was important that I displayed the total number of items in the cart along with the total value. Also, adding an image for when the cart is empty helped give it some life even when no products have been added yet.
