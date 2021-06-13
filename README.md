@@ -31,3 +31,7 @@ The menu items were inspired from coffee shops that I've visited and from my exp
 -Cart Page-
 
 For the cart, it was important that I displayed the total number of items in the cart along with the total value. Also, adding an image for when the cart is empty helped give it some life even when no products have been added yet.
+
+ . . .
+ 
+ Overall, it was a very enjoyable working on this project. I understood better how React components can pass data which can manipulate state in the Redux store, and I also gained an appreciation for styled components after seeing how much code it saved by creating reusable components that can be edited through props.
