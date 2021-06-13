@@ -8,7 +8,7 @@ Medium Article: https://randychong27.medium.com/crafting-the-bobarista-b12e04b5f
 
  . . .
  
-![cafe-app-home-2](https://user-images.githubusercontent.com/80119466/121717743-268c2500-caa7-11eb-89d8-1972d827bf9d.png)
+![cafe-home-full](https://user-images.githubusercontent.com/80119466/121796581-bdf49380-cbdf-11eb-9228-58b5365b2d8a.png)
 
 -Home Page-
 
